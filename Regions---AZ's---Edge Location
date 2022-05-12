@@ -1,0 +1,26 @@
+Aws Regions = AWS has the concept of a Region, which is a physical location around the world where we cluster data centers
+
+We call each group of logical data centers an Availability Zone
+
+
+This are regions us-east-1, us-west-1 ... and under regions are availiablity zones(AZ's)
+
+(AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region.
+All AZs in an AWS Region are interconnected with high-bandwidth, low-latency networking, over fully redundant, 
+dedicated metro fiber providing high-throughput, low-latency networking between AZs. 
+All traffic between AZs is encrypted. The network performance is sufficient to accomplish synchronous replication between AZs
+us-east-1a, us-east-1b
+
+
+if theres issue in us-east-1a it will not affect us-east-1b unless its some big issue , as AZs are independent fault tolerant 
+
+, Edge location 
+
+
+https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+
+
+Vpc has network range and that network range is across all the subnets
+A VPC can have a minimum of 16 addresses, using the CIDR netmask /28 , and a maximum of 65,536 addresses, using the netmask /16 .
+
+https://www.pulumi.com/docs/guides/crosswalk/aws/vpc/
