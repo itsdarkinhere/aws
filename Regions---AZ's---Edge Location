@@ -24,3 +24,11 @@ Vpc has network range and that network range is across all the subnets
 A VPC can have a minimum of 16 addresses, using the CIDR netmask /28 , and a maximum of 65,536 addresses, using the netmask /16 .
 
 https://www.pulumi.com/docs/guides/crosswalk/aws/vpc/
+
+
+
+Edge location.
+Edge Location are smaller packets of infrastructure distributed globally
+Edge locations are AWS data centers designed to deliver services with the lowest latency possible.
+A site that CloudFront uses to cache copies of your content for faster delivery to users at any location. 
+you cant deploy amazon rds instance to an aedge location
